@@ -1,0 +1,162 @@
+@CHARSET "ISO-8859-1";
+html {
+	background-image: url("C:/Users/admin/Java Workspaces/Week4Project/weekfourproject/images/theatre2.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+h1 {
+	font-size: 4em;
+	color: yellow;
+	text-align: center;
+	text-shadow:#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+    #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+    #000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+	#000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+	#000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+    #000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+    #000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+	#000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+	#000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+	#000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px,
+	#000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px,
+    #000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px,
+    #000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px,
+	#000 0px 0px 4px,   #000 0px 0px 4px,   #000 0px 0px 4px,
+	#000 0px 0px 4px,   #000 0px 0px 4px,   #000 0px 0px 4px,
+    #000 0px 0px 4px,   #000 0px 0px 4px,   #000 0px 0px 4px,
+    #000 0px 0px 4px,   #000 0px 0px 4px,   #000 0px 0px 4px,
+	#000 0px 0px 4px,   #000 0px 0px 4px,   #000 0px 0px 4px;
+}
+table {
+	margin-top: 160px;
+	margin-left: 530px;
+	border: 2px solid white;
+	background-color: black;
+	color: white;
+}
+
+th {
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 2em;
+	text-align: center;
+}
+
+td {
+	padding: 2px;
+	text-align: center;
+}
+
+form {
+	font-size: 20px;
+	color: yellow;
+	text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+    #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+    #000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+	#000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+	#000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+    #000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+    #000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+	#000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+	#000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+	#000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px,
+	#000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px,
+    #000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px,
+    #000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px,
+	#000 0px 0px 4px,   #000 0px 0px 4px,   #000 0px 0px 4px,
+	#000 0px 0px 4px,   #000 0px 0px 4px,   #000 0px 0px 4px,
+    #000 0px 0px 4px,   #000 0px 0px 4px,   #000 0px 0px 4px,
+    #000 0px 0px 4px,   #000 0px 0px 4px,   #000 0px 0px 4px,
+	#000 0px 0px 4px,   #000 0px 0px 4px,   #000 0px 0px 4px;
+    padding-left: 1em;
+	font-style: bold;
+
+}
+
+.title {
+	float: left;
+	margin-left: 450px;
+}
+
+.update {
+
+	float: left;
+
+}
+.delete {
+	float: left;
+}
+
+h2 {
+	font-style: bold;
+	text-align: center;
+	color: white;
+	text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+    #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+    #000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+	#000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+	#000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+    #000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+    #000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+	#000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+	#000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+	#000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px,
+	#000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px,
+    #000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px,
+    #000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px,
+	#000 0px 0px 4px,   #000 0px 0px 4px,   #000 0px 0px 4px,
+	#000 0px 0px 4px,   #000 0px 0px 4px,   #000 0px 0px 4px,
+    #000 0px 0px 4px,   #000 0px 0px 4px,   #000 0px 0px 4px,
+    #000 0px 0px 4px,   #000 0px 0px 4px,   #000 0px 0px 4px,
+	#000 0px 0px 4px,   #000 0px 0px 4px,   #000 0px 0px 4px;
+}
+
+input{
+	margin-left: 
+}
+
+.input{
+	margin-left: 120px;
+}
+
+.input2{
+	margin-left: 120px;
+}
+.submit{
+	margin-left: 170px;
+}
+
+.submit2{
+	margin-left: 170px;
+}
