@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class DAO 
 {
+	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
 	static final String DB_URL = "jdbc:mysql://localhost:3306/?user=root&autoReconnect=true&useSSL=false";
 	static final String USER = "root";
 	static final String PASSWORD = "root";
@@ -21,12 +22,14 @@ public class DAO
 	{
 		try 
 		{
+			Class.forName(JDBC_DRIVER);
+			
 			System.out.println("Connecting to the Database");
 			CONN = DriverManager.getConnection(DB_URL, USER, PASSWORD);
 			System.out.println("Connected to the database");
 		}
 		
-		catch (SQLException e) 
+		catch (SQLException | ClassNotFoundException e) 
 		{
 		System.out.println("Failed to connect to the database.");
 		e.printStackTrace();
@@ -50,7 +53,7 @@ public class DAO
 				movietInDB.setMovieTitle(RES_SET.getString("title"));
 				movietInDB.setMovieRating(RES_SET.getString("rating"));
 				movietInDB.setMovieGenre(RES_SET.getString("genre"));
-				movietInDB.setMovieLength(RES_SET.getInt("length"));
+				movietInDB.setMovieLength(RES_SET.getString("length"));
 				
 				ourMovies.add(movietInDB);
 			}
@@ -67,11 +70,11 @@ public class DAO
 		}
 	}
 	
-	public static void writeToDB()
+	public static void writeToDB(Movie movie)
 	{
 		Movie movieToAdd = new Movie();
 		
-		movieToAdd = aboutTheMovie();
+		movieToAdd = movie;
 		
 		connToDB();
 		
@@ -82,7 +85,7 @@ public class DAO
 			PREP_STMT.setString(1, movieToAdd.getMovieTitle());
 			PREP_STMT.setString(2, movieToAdd.getMovieRating());
 			PREP_STMT.setString(3, movieToAdd.getMovieGenre());
-			PREP_STMT.setInt(4, movieToAdd.getMovieLength());
+			PREP_STMT.setString(4, movieToAdd.getMovieLength());
 			
 			PREP_STMT.executeUpdate();
 		} 
@@ -95,7 +98,7 @@ public class DAO
 	
 	private static String insertToDatabase = "INSERT INTO `movies`.`movies`"
 			+ "(title, rating, genre, length)"
-			+ "VALUES"
+			+ " VALUES "
 			+ "(?, ?, ?, ?)";
 	
 	private static Movie aboutTheMovie()
@@ -112,7 +115,7 @@ public class DAO
 		movieToAdd.setMovieGenre(sc.nextLine());
 		
 		System.out.println("What is the length of the movie in minutes?");
-		movieToAdd.setMovieLength(Integer.parseInt(sc.next()));
+		movieToAdd.setMovieLength(sc.next());
 		
 		return movieToAdd;
 		
@@ -174,7 +177,7 @@ public class DAO
 		movieToModify.setMovieGenre(sc.nextLine());
 		
 		System.out.println("What is the updated length of the movie in minutes?");
-		movieToModify.setMovieLength(Integer.parseInt(sc.next()));
+		movieToModify.setMovieLength(sc.next());
 		
 //		System.out.println("What is the movie's original title?");
 //		movieToModify.setMovieTitle(sc.nextLine());
@@ -196,7 +199,7 @@ public class DAO
 			PREP_STMT.setString(1, movieToModify.getMovieTitle());
 			PREP_STMT.setString(2, movieToModify.getMovieRating());
 			PREP_STMT.setString(3, movieToModify.getMovieGenre());
-			PREP_STMT.setInt(4, movieToModify.getMovieLength());
+			PREP_STMT.setString(4, movieToModify.getMovieLength());
 			PREP_STMT.setString(5, movieToModify.getMovieTitle());
 			
 			PREP_STMT.executeUpdate();
